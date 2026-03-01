@@ -1,0 +1,19 @@
+{
+  "name": "@sirou/docs-formatter",
+  "version": "1.0.0",
+  "description": "Premium React components for Sirou documentation sites",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "marked": "^11.1.0",
+    "prismjs": "^1.29.0",
+    "lucide-react": "^0.300.0",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.0",
+    "@tailwindcss/typography": "^0.5.10"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
