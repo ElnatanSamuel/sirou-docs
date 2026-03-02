@@ -1,6 +1,6 @@
 # Data Loaders
 
-Data Loaders allow you to fetch the data your screens need **before** the transition occurs. This eliminates UI watermarks and ensure a premium, flicker-free experience.
+Data Loaders allow you to fetch the data your screens need **before** the transition occurs. This eliminates UI watermarks and ensure a premium, flicker free experience.
 
 ## The Loading Pattern
 
@@ -34,7 +34,7 @@ export const routes = defineRoutes({
 
 ## Accessing Data
 
-Use the `useRouteData` hook to access the pre-loaded data in your components.
+Use the `useRouteData` hook to access the pre loaded data in your components.
 
 ```tsx
 import { useRouteData } from "@sirou/react";
@@ -65,7 +65,7 @@ Data returned from loaders is automatically typed when accessed via hooks.
 
 ### Cache Awareness
 
-Sirou intelligently manages loader state, preventing redundant fetches during param-only updates.
+Sirou intelligently manages loader state, preventing redundant fetches during param only updates.
 :::
 
 ---

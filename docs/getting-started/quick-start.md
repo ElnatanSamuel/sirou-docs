@@ -1,6 +1,6 @@
 # Quick Start
 
-Get your first type-safe route running in less than 5 minutes.
+Get your first type safe route running in less than 5 minutes.
 
 ## 1. Define Your Routes
 
@@ -62,7 +62,7 @@ export function App() {
 
 ## 3. Navigate with Type Safety
 
-Forget string-based paths. Use the route name and a typed params object.
+Forget string based paths. Use the route name and a typed params object.
 
 ```tsx
 import { useSirouRouter } from "@sirou/react";

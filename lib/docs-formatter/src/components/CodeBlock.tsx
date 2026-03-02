@@ -87,7 +87,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
             `language-${language}`,
             isTerminal
               ? "font-mono text-[14px] leading-relaxed text-white/90"
-              : "text-[15px] leading-7",
+              : "text-[12px] leading-7",
           )}
         >
           <code className={`language-${language}`}>{code.trim()}</code>

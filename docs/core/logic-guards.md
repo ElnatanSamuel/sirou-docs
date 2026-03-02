@@ -54,7 +54,7 @@ Keep your auth and permission logic in one place instead of repeating `useEffect
 
 Use the same guard logic on your Svelte web app and your React Native mobile app.
 
-### Type-Safe Context
+### Type Safe Context
 
 Guards have access to fully typed parameters and metadata from your route schema.
 :::

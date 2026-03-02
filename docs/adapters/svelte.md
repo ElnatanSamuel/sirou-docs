@@ -1,6 +1,6 @@
 # Svelte Adapter
 
-Reactive, type-safe routing for the Svelte ecosystem. Sirou for Svelte brings the power of centralized schema management to Svelte and SvelteKit applications.
+Reactive, type safe routing for the Svelte ecosystem. Sirou for Svelte brings the power of centralized schema management to Svelte and SvelteKit applications.
 
 ## Reactive Architecture
 
@@ -30,7 +30,7 @@ Route state, parameters, and query strings are exposed as native Svelte stores f
 
 ### SvelteKit Ready
 
-Augment SvelteKit's file-based routing with Sirou's centralized type safety and cross-platform guards.
+Augment SvelteKit's file based routing with Sirou's centralized type safety and crossplatform guards.
 
 ### Minimal Boilerplate
 

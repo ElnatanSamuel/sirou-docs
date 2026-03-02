@@ -26,7 +26,7 @@ npm install @sirou/react-native
 
 ### Native Performance
 
-Leverages the high-performance Sirou Trie for lightning-fast route matching on mobile devices.
+Leverages the high performance Sirou Trie for lightning fast route matching on mobile devices.
 
 ### React Navigation Bridge
 

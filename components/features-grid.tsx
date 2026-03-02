@@ -37,21 +37,21 @@ function FeatureCard({
   return (
     <div
       className={cn(
-        "relative p-10 flex flex-col border-r border-b border-white/5",
+        "relative p-10 flex flex-col border-r border-b border-white/10",
         isLastInRow && "lg:border-r-0",
         isInLastRow && "lg:border-b-0",
         className,
       )}
     >
       {/* Corner Markers - Using top-left for everyone */}
-      <div className="absolute -left-2.5 -top-2.5 z-20 text-white/20">
+      <div className="absolute -left-2.5 -top-2.5 z-20 text-white/40">
         <Plus className="w-5 h-5" strokeWidth={1} />
       </div>
 
       {/* Top-Right marker only for last items in row */}
       <div
         className={cn(
-          "absolute -right-2.5 -top-2.5 z-20 text-white/20",
+          "absolute -right-2.5 -top-2.5 z-20 text-white/40",
           !isLastInRow && "lg:hidden",
         )}
       >
@@ -61,7 +61,7 @@ function FeatureCard({
       {/* Bottom-Left marker only for last row items */}
       <div
         className={cn(
-          "absolute -left-2.5 -bottom-2.5 z-20 text-white/20",
+          "absolute -left-2.5 -bottom-2.5 z-20 text-white/40",
           !isInLastRow && "lg:hidden",
         )}
       >
@@ -70,7 +70,7 @@ function FeatureCard({
 
       {/* Bottom-Right marker only for the very last item */}
       {index === total - 1 && (
-        <div className="absolute -right-2.5 -bottom-2.5 z-20 text-white/20">
+        <div className="absolute -right-2.5 -bottom-2.5 z-20 text-white/40">
           <Plus className="w-5 h-5" strokeWidth={1} />
         </div>
       )}
@@ -79,15 +79,15 @@ function FeatureCard({
         {icon}
       </div>
 
-      <span className="text-xs font-bold text-white/30 uppercase tracking-[0.2em] mb-3 font-sans">
+      <span className="text-[10px] font-bold text-white/80 uppercase tracking-[0.2em] mb-3 font-sans">
         {subtitle}
       </span>
 
-      <h3 className="text-2xl font-bold tracking-tight mb-4 text-white font-heading">
+      <h3 className="text-xl font-bold tracking-tight mb-4 text-white font-heading">
         {title} <span className="text-white/20">.</span>
       </h3>
 
-      <p className="text-white/50 leading-relaxed font-medium">{description}</p>
+      <p className="text-white/80 leading-relaxed font-medium">{description}</p>
     </div>
   );
 }
@@ -142,17 +142,17 @@ export function FeaturesGrid() {
     <section className="w-full bg-[#000] py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
-          <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-4 font-heading text-white italic">
+          <h2 className="text-xl md:text-3xl font-black tracking-tight mb-4 font-heading text-white ">
             Why Sirou?
           </h2>
-          <p className="text-xl text-white/40 font-medium max-w-2xl">
+          <p className="text-base md:text-lg text-white font-medium max-w-2xl">
             Eliminate fragmented routing logic. Treat your routes as a{" "}
             <span className="text-white font-bold">Centralized Schema</span>{" "}
             that ensures consistency across your entire stack.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-l border-t border-white/5 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-l border-t border-white/10 relative">
           {features.map((feature, idx) => (
             <FeatureCard
               key={idx}

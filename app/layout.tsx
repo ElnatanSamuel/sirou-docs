@@ -21,12 +21,36 @@ const _oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Sirou - Define routes once. Navigate everywhere.",
+  title: "Sirou — Define routes once. Navigate everywhere.",
   description:
-    "Define routes once. Navigate everywhere. Sirou is a universal routing library for React, Next.js, React Native, and Svelte.",
+    "Sirou (Simple Router) is a framework-agnostic, universal routing and navigation engine for TypeScript. Define navigation once, run it anywhere — from Next.js servers to React Native mobile apps.",
+  metadataBase: new URL("https://sirou.dev"),
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/image/sirouwhite.png",
-    apple: "/image/sirouwhite.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [{ rel: "mask-icon", url: "/icon.svg" }],
+  },
+  openGraph: {
+    title: "Sirou — Define routes once. Navigate everywhere.",
+    description:
+      "Sirou (Simple Router) is a framework-agnostic, universal routing and navigation engine for TypeScript.",
+    url: "https://sirou.dev",
+    siteName: "Sirou",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sirou — Define routes once. Navigate everywhere.",
+    description:
+      "Sirou (Simple Router) is a framework-agnostic, universal routing and navigation engine for TypeScript.",
   },
 };
 

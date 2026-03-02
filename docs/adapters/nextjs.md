@@ -27,7 +27,7 @@ npm install @sirou/nextjs
 
 ### Server Actions
 
-Use `sirouRedirect` inside your Server Actions for type-safe, validated redirects.
+Use `sirouRedirect` inside your Server Actions for type safe, validated redirects.
 
 ### Edge Middleware
 

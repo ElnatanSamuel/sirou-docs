@@ -10,10 +10,7 @@ import { Anton } from "next/font/google";
 
 const anton = Anton({ subsets: ["latin"], weight: ["400"] });
 
-const NAV = [
-  { label: "Docs", href: "/docs" },
-  { label: "Changelog", href: "/changelog" },
-];
+const NAV = [{ label: "Docs", href: "/docs" }];
 
 export function NewHeader() {
   const [open, setOpen] = useState(false);
@@ -126,12 +123,6 @@ export function NewHeader() {
                       textDecoration: "none",
                       opacity: active ? 1 : 1,
                     }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.color = "#826eff";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.color = "white";
-                    }}
                   >
                     {link.label}
                   </Link>
@@ -139,7 +130,7 @@ export function NewHeader() {
               })}
 
               <a
-                href="https://github.com"
+                href="https://github.com/ElnatanSamuel/sirou"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

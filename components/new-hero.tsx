@@ -26,7 +26,7 @@ export const routes = defineRoutes({
 
 router.go("profile", { id: user.id });`;
 
-function CodeBlock({ y }: { y: any }) {
+function CodeBlock() {
   const [copied, setCopied] = useState(false);
   const codeRef = useRef<HTMLElement>(null);
   useEffect(() => {
@@ -34,7 +34,7 @@ function CodeBlock({ y }: { y: any }) {
   }, []);
 
   return (
-    <motion.div style={{ y }} className="relative w-full text-left">
+    <div className="relative w-full text-left">
       <div className="absolute -inset-4 bg-white/5 rounded-3xl blur-[60px] pointer-events-none" />
       <div className="relative rounded-2xl overflow-hidden bg-black shadow-[0_50px_100px_rgba(0,0,0,0.9)]">
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-black">
@@ -42,12 +42,12 @@ function CodeBlock({ y }: { y: any }) {
             {["#ff5f57", "#febc2e", "#28c840"].map((c) => (
               <div
                 key={c}
-                className="w-2.5 h-2.5 rounded-full opacity-40 shadow-inner"
+                className="w-2.5 h-2.5 rounded-full opacity-80 shadow-inner"
                 style={{ background: c }}
               />
             ))}
           </div>
-          <span className="text-[11px] text-white/30 font-mono tracking-[0.2em] pr-10 uppercase">
+          <span className="text-[11px] text-white/80 font-mono tracking-[0.2em] pr-10 uppercase">
             router.ts
           </span>
           <button
@@ -73,27 +73,20 @@ function CodeBlock({ y }: { y: any }) {
             <code
               ref={codeRef}
               className="language-typescript"
-              style={{ fontSize: "16px", lineHeight: "1.7", textAlign: "left" }}
+              style={{ fontSize: "14px", lineHeight: "1.7", textAlign: "left" }}
             >
               {CODE}
             </code>
           </pre>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 export function NewHero() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-  const rawY = useTransform(scrollYProgress, [0, 1], [0, 80]);
-  const smoothY = useSpring(rawY, { stiffness: 50, damping: 18 });
-  const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
     <section
@@ -115,10 +108,7 @@ export function NewHero() {
       <div className="absolute inset-x-0 bottom-0 h-96 bg-gradient-to-t from-[#000] via-[#04040a]/90 to-transparent z-[2]" />
 
       {/* ═══ CONTENT ══════════════════════════════════════════════════════════ */}
-      <motion.div
-        style={{ opacity: fade }}
-        className="relative z-10 w-full flex flex-col items-center text-center px-6 pt-36 pb-12 max-w-7xl mx-auto"
-      >
+      <div className="relative z-10 w-full flex flex-col items-center text-center px-6 pt-36 pb-12 max-w-7xl mx-auto">
         {/* Headline */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -127,14 +117,14 @@ export function NewHero() {
           className="mb-8"
         >
           <h1
-            className="text-white  tracking-tighter leading-none mb-2"
-            style={{ fontSize: "clamp(60px, 12vw, 90px)" }}
+            className="text-white tracking-tighter leading-none"
+            style={{ fontSize: "clamp(60px, 12vw, 80px)" }}
           >
-            Define once.
+            Define routes once.
           </h1>
           <h1
             className="text-white  tracking-tighter leading-none"
-            style={{ fontSize: "clamp(60px, 12vw, 90px)" }}
+            style={{ fontSize: "clamp(60px, 12vw, 80px)" }}
           >
             Navigate everywhere.
           </h1>
@@ -145,7 +135,7 @@ export function NewHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-white/90 max-w-2xl text-xl sm:text-xl font-medium leading-relaxed mb-16"
+          className="text-white/90 max-w-2xl text-base sm:text-lg font-medium leading-relaxed mb-16"
           style={{ letterSpacing: "-0.01em" }}
         >
           Sirou (Simple Router) is a framework-agnostic, universal routing and
@@ -159,12 +149,12 @@ export function NewHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col sm:flex-row items-center gap-4 w-full max-w-3xl mb-32"
+          className="flex flex-col sm:flex-row items-center gap-4 w-full max-w-3xl mb-20"
         >
-          <div className="flex-1 w-full bg-black rounded-2xl p-2 flex items-center gap-4 shadow-2xl">
-            <div className="bg-white/5 rounded-xl px-4 py-4 flex items-center gap-4 flex-1 overflow-hidden">
+          <div className="flex-1 w-full bg-black rounded-[10px] p-2 flex items-center gap-4 shadow-2xl">
+            <div className="bg-white/5 rounded-xl px-2 py-2 flex items-center gap-4 flex-1 overflow-hidden">
               <Terminal className="w-4 h-4 text-white shrink-0" />
-              <code className="text-xs sm:text-lg font-mono text-white truncate">
+              <code className="text-xs sm:text-base font-mono text-white truncate">
                 $ npm install @sirou/core
               </code>
             </div>
@@ -174,7 +164,7 @@ export function NewHero() {
               }
               className="p-3.5 hover:bg-white/10 rounded-xl transition-colors text-white"
             >
-              <Copy className="w-6 h-6" />
+              <Copy className="w-4 h-4" />
             </button>
           </div>
           {/* <a
@@ -192,9 +182,9 @@ export function NewHero() {
           transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="w-full max-w-4xl"
         >
-          <CodeBlock y={smoothY} />
+          <CodeBlock />
         </motion.div>
-      </motion.div>
+      </div>
 
       <style jsx>{`
         .perspective-1000 {

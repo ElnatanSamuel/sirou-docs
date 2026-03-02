@@ -120,7 +120,7 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content }) => {
         }
         .sirou-prose p {
           font-family: var(--font-inter), sans-serif;
-          font-size: 19px;
+          font-size: 16px;
           line-height: 1.8;
           color: white;
           margin-bottom: 2rem;
@@ -128,28 +128,28 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content }) => {
         }
         .sirou-prose h1 {
           font-family: var(--font-space-grotesk), sans-serif;
-          font-size: 48px;
+          font-size: 32px;
           font-weight: 900;
           color: white;
-          margin-top: 5rem;
-          margin-bottom: 2.5rem;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
           letter-spacing: -0.05em;
           line-height: 1.1;
         }
         .sirou-prose h2 {
           font-family: var(--font-space-grotesk), sans-serif;
-          font-size: 32px;
+          font-size: 30px;
           font-weight: 800;
           color: white;
-          margin-top: 4rem;
-          margin-bottom: 1.5rem;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
           letter-spacing: -0.04em;
           border-bottom: 1px solid rgba(255, 255, 255, 0.15);
           padding-bottom: 1rem;
         }
         .sirou-prose h3 {
           font-family: var(--font-space-grotesk), sans-serif;
-          font-size: 22px;
+          font-size: 20px;
           font-weight: 700;
           color: white;
           margin-top: 3rem;
@@ -160,7 +160,7 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content }) => {
           width: 100%;
           border-collapse: collapse;
           margin-bottom: 3rem;
-          font-size: 17px;
+          font-size: 14px;
           border: 1px solid white;
         }
         .sirou-prose th,
@@ -174,7 +174,7 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content }) => {
           font-weight: 900;
           color: white;
           text-transform: uppercase;
-          font-size: 13px;
+          font-size: 12px;
           letter-spacing: 0.1em;
         }
         .sirou-prose td {
@@ -188,7 +188,7 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content }) => {
         }
         .sirou-prose li {
           font-family: var(--font-inter), sans-serif;
-          font-size: 19px;
+          font-size: 16px;
           color: white;
           margin-bottom: 1rem;
           font-weight: 500;

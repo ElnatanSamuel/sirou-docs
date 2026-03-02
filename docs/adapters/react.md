@@ -41,7 +41,7 @@ function Root() {
 
 ### `SirouLink`
 
-A type-safe link component that ensures you never point to a non-existent route.
+A type safe link component that ensures you never point to a non existent route.
 
 ```tsx
 import { SirouLink } from "@sirou/react";

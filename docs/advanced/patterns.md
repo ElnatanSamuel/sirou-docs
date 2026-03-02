@@ -1,6 +1,6 @@
 # Advanced Patterns
 
-Once you've mastered the basics, you can use Sirou to solve complex architectural challenges in large-scale applications.
+Once you've mastered the basics, you can use Sirou to solve complex architectural challenges in large scale applications.
 
 ## 1. Analytics & Tracking
 

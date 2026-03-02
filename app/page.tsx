@@ -28,30 +28,28 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-[11px] font-black text-white/40 uppercase tracking-[0.2em]">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-[11px] font-black text-white/80 uppercase tracking-[0.2em]">
             <a
-              href="#"
+              href="/docs"
               className="hover:text-white transition-all hover:scale-105"
             >
               Docs
             </a>
             <a
-              href="#"
+              href="https://github.com/ElnatanSamuel/sirou"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-white transition-all hover:scale-105"
             >
               GitHub
             </a>
             <a
-              href="#"
+              href="https://www.npmjs.com/settings/sirou/packages"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-white transition-all hover:scale-105"
             >
               NPM
-            </a>
-            <a
-              href="#"
-              className="hover:text-white transition-all hover:scale-105"
-            >
-              Twitter
             </a>
           </div>
         </div>

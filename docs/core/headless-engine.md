@@ -1,6 +1,6 @@
 # Headless Engine
 
-Sirou's core engine is 100% "Headless"—meaning it is a pure logic layer with no dependencies on a DOM, a framework, or even a browser environment.
+Sirou's core engine is 100% "Headless" meaning it is a pure logic layer with no dependencies on a DOM, a framework, or even a browser environment.
 
 ## Logic-First Architecture
 

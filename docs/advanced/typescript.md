@@ -1,6 +1,6 @@
 # TypeScript Mastery
 
-Sirou leverages advanced TypeScript features like **Template Literal Types**, **Recursive Conditional Types**, and **Mapped Types** to provide zero-cost type safety.
+Sirou leverages advanced TypeScript features like **Template Literal Types**, **Recursive Conditional Types**, and **Mapped Types** to provide zero cost type safety.
 
 ## 1. Inferring Parameters
 

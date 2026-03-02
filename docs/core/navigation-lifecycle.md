@@ -18,7 +18,7 @@ graph TD
 
 ### 1. Guard Phase
 
-The router executes all registered global and route-specific guards. If any guard returns a redirect or denies access, the transition is interrupted.
+The router executes all registered global and route specific guards. If any guard returns a redirect or denies access, the transition is interrupted.
 
 ### 2. Loader Phase
 

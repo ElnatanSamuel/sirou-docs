@@ -4,7 +4,7 @@ Sirou uses a high-performance Radix Trie (prefix tree) for route matching. This 
 
 ## How it Matches
 
-Unlike regex-based routers that iterate through an array of patterns, the Radix Trie traverses a tree structure node-by-node.
+Unlike regex based routers that iterate through an array of patterns, the Radix Trie traverses a tree structure node by node.
 
 ```mermaid
 graph LR
@@ -22,7 +22,7 @@ graph LR
 
 ## Performance Benchmarks
 
-In large-scale applications with thousands of routes, a Radix Trie remains consistently fast, while regex-based matching scales linearly (O(N)).
+In large scale applications with thousands of routes, a Radix Trie remains consistently fast, while regex based matching scales linearly (O(N)).
 
 | Routes | Regex Matcher | Sirou (Radix Trie) |
 | :----- | :------------ | :----------------- |
